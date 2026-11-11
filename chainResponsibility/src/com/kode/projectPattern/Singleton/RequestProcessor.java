@@ -17,9 +17,6 @@ public class RequestProcessor {
         Handler register = new Register(new DetailedProcessingStrategy());
         Handler logout = new LogOut(new FastProcessingStrategy());
 
-        Handler deposit = new Deposit(new DetailedProcessingStrategy());
-        Handler withdraw = new WithDraw(new DetailedProcessingStrategy());
-        Handler check = new Check(new DetailedProcessingStrategy());
 
         login.setnextHandler(register).setnextHandler(logout);
         this.chain = login;

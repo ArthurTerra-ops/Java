@@ -29,6 +29,8 @@ public static void main(String[] args){
             System.out.println("request: login\n \n \n");RequestProcessorInstance.process("login"); break;
         case 2: System.out.println("request: register\n \n \n");RequestProcessorInstance.process("register"); break;
         case 3: System.out.println("request: logout\n \n \n");RequestProcessorInstance.process("logout"); break;
+        case 4:
+            System.out.println("Encerrando");;break;
         default:
             System.out.println("valor inválido"); break;
     }
