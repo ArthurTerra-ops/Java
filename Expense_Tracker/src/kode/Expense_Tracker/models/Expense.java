@@ -3,10 +3,21 @@ package kode.Expense_Tracker.models;
 public class Expense {
     // Here the basic Expense is created
 
+    @Override
+    public String toString() {
+        return "{ Expense: " + decription + "\n id: " + id + "\n Value: " + value + " }";
+    };
+
+    public Expense(String decription, int value) {
+        this.decription = decription;
+        this.value = value;
+    }
+
     private int value;
+    private int id;
 
     private String decription;
-    private String id;
+
 
     private Client owner;
 
@@ -26,11 +37,11 @@ public class Expense {
         this.owner = owner;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

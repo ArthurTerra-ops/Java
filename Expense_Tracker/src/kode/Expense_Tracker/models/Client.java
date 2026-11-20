@@ -10,6 +10,17 @@ public class Client {
     private int id;
     private int budget;
 
+    public Client(String name, String passWord, String login) {
+        this.name = name;
+        this.passWord = passWord;
+        this.login = login;
+    }
+
+    @Override
+    public String toString() {
+    return "{ name: " + name + "\n id: " + id + "\n Login: " + login + " }";
+    };
+
     public String getName() {
         return name;
     }
